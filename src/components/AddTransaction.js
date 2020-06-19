@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
+import { v4 as uuidv4 } from 'uuid';
 
 
 export const AddTransaction = () => {
@@ -12,7 +13,7 @@ export const AddTransaction = () => {
         e.preventDefault();
 
         const newTransaction = {
-            id: Math.floor(Math.random() * 1000000),
+            id: uuidv4(),
             text,
             amount: +amount
         }
