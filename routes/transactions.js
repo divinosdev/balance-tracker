@@ -12,5 +12,3 @@ router
     .delete(deleteTransactions);
 
 module.exports = router;
-
-//testcomment
