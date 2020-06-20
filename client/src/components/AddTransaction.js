@@ -2,14 +2,21 @@ import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 import { v4 as uuidv4 } from 'uuid';
 
-
+var i = 0;
 export const AddTransaction = () => {
+
     const [text, setText] = useState('');
     const [amount, setAmount] = useState(0);
 
     const { addTransaction } = useContext(GlobalContext);
 
     const onSubmit = e => {
+        i++;
+        if (i >= 3) {
+            alert("You can only add 5 events.");
+            e.preventDefault();
+            return;
+        }
         e.preventDefault();
 
         const newTransaction = {
@@ -17,6 +24,8 @@ export const AddTransaction = () => {
             text,
             amount: +amount
         }
+
+
 
         addTransaction(newTransaction);
     }
