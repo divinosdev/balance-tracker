@@ -1,10 +1,10 @@
 # Balance Tracker
 
-A CRUD application to post, fetch and delete lists. 
+A CRUD application made with the MERN stack to post, fetch and delete lists. 
 
 ## Deployment 
 
-[https://balancetrackerapp.herokuapp.com/](https://nodejs.org/en/)
+[balancetrackerapp.herokuapp.com](https://balancetrackerapp.herokuapp.com/)
 
 ### Installing
 
