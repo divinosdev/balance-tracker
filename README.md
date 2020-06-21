@@ -9,7 +9,7 @@ A CRUD application to post, fetch and delete lists.
 ### Installing
 
 Clone repo.
-Add node modules
+Add node modules:
 
 ```
 npm install
@@ -18,7 +18,7 @@ cd client npm install
 
 ### Deploy to local server
 
-In parent directory.
+In parent directory:
 
 ```
 npm run dev
@@ -27,6 +27,6 @@ npm run dev
 ### Built With
 
 * [React.js](https://reactjs.org/) - Front end framework
-* [MongoDB](https://www.mongodb.com/) - Dependency Management
-* [Express.js](https://expressjs.com/) - Used to generate RSS Feeds
-* [Node.js](https://nodejs.org/en/) - Used to generate RSS Feeds
+* [MongoDB](https://www.mongodb.com/) - NoSQL Database
+* [Express.js](https://expressjs.com/) - Node.js web application framework
+* [Node.js](https://nodejs.org/en/) - JavaScript runtime environment
