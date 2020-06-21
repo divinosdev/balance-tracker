@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+colors-test-personal{
+  color: #162447 or #1f4068 or #1b1b2f or #e43f5a or #29c7ac
+}
+
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 1px 3px #1b1b2f, 0 2px 1px #1b1b2f;
 }
 
 * {
@@ -9,7 +13,7 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #162447;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,23 +29,30 @@ body {
 }
 
 h1 {
+  color: #a6dcef;
   letter-spacing: 1px;
   margin: 0;
 }
 
+h2 {
+  color: #a6dcef;
+}
+
 h3 {
-  border-bottom: 1px solid #bbb;
+  color: #a6dcef;
+  border-bottom: 1px solid #1f4068;
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
 
 h4 {
+  color: #a6dcef;
   margin: 0;
   text-transform: uppercase;
 }
 
 .inc-exp-container {
-  background-color: #fff;
+  background-color: #1f4068;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -65,21 +76,28 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #29c7ac;
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #e43f5a;
 }
 
 label {
+  color: #a6dcef;
   display: inline-block;
   margin: 10px 0;
 }
 
+::placeholder {
+  color:#a6dcef86;
+}
+
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
+  background-color: #1f4068;
+  color: #fff;
+  border: 1px solid #1f4068;
   border-radius: 2px;
   display: block;
   font-size: 16px;
@@ -89,7 +107,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #29c7ac;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -112,9 +130,9 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: #1f4068;
   box-shadow: var(--box-shadow);
-  color: #333;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -123,16 +141,16 @@ input[type='number'] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 5px solid #29c7ac;
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid #e43f5a;
 }
 
 .delete-btn {
   cursor: pointer;
-  background-color: #e74c3c;
+  background-color: #e43f5a;
   border: 0;
   color: #fff;
   font-size: 20px;
