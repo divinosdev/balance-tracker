@@ -22,4 +22,8 @@ app.use('/api/v1/transactions', transactions);
 
 const PORT = process.env.PORT || 5000;
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
+
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on ${PORT}`.yellow.bold));
