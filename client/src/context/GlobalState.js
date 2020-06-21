@@ -6,6 +6,9 @@ const initialState = {
     error: null,
     loading: true
 }
+const Filter = require('bad-words')
+
+const filter = new Filter();
 
 //create context
 export const GlobalContext = createContext(initialState);

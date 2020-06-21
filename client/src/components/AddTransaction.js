@@ -2,6 +2,10 @@ import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 import { v4 as uuidv4 } from 'uuid';
 
+const Filter = require('bad-words')
+
+const filter = new Filter();
+
 var i = 0;
 export const AddTransaction = () => {
 
@@ -21,7 +25,7 @@ export const AddTransaction = () => {
 
         const newTransaction = {
             id: uuidv4(),
-            text,
+            text: filter.clean(text),
             amount: +amount
         }
 
