@@ -4,7 +4,7 @@ A CRUD application to post, fetch and delete lists.
 
 ## Deployment 
 
-balancetrackerapp.herokuapp.com
+[https://balancetrackerapp.herokuapp.com/](https://nodejs.org/en/)
 
 ### Installing
 
@@ -24,11 +24,7 @@ In parent directory.
 npm run dev
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
+### Built With
 
 * [React.js](https://reactjs.org/) - Front end framework
 * [MongoDB](https://www.mongodb.com/) - Dependency Management
