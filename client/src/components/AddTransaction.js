@@ -13,7 +13,7 @@ export const AddTransaction = () => {
     const onSubmit = e => {
         i++;
         if (i >= 3) {
-            alert("You can only add 5 events.");
+            alert("You can only add 2 events.");
             e.preventDefault();
             return;
         }
